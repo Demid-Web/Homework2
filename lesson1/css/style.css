@@ -1,0 +1,117 @@
+body{
+    color: darkgoldenrod;
+    font-size: 22px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+    max-width: 700px;
+    margin: auto;
+    /*flex-wrap: wrap;*/
+    border-bottom: 10px solid darkgoldenrod;
+}
+a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: darkgoldenrod;
+}
+.aa:hover{
+    border-bottom: 15px solid darkgoldenrod;
+    transform: translateY(0px);
+    transition: 0.1s;
+}
+.aa:not(hover){
+    transform: translateY(0px);
+    transition: 0.1s;
+    border-bottom: 0px solid darkgoldenrod;
+}
+.TF2Logo{
+    border: 3px solid darkgoldenrod;
+    padding: 7px;
+    margin: 3px;
+}
+.TF2Logo:hover{
+    background-color: darkslategrey;
+    transition: 1000ms;
+}
+.TF2Logo:not(hover){
+    transition: 1000ms;
+}
+.one{
+    display: flex;
+    max-width: 750px;
+    margin: 20px auto;
+    gap: 20px;
+    background-image: url("https://steamuserimages-a.akamaihd.net/ugc/866243532111457317/B3A0FBE595555467E63EF81F62DF45DB16ECB3F0/");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0px 0px 0px 0px;
+    background-attachment: fixed;
+    padding: 20px;
+    justify-content: space-between;
+
+}
+.img1{
+    width: 175px;
+}
+.img1:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.img1:not(hover){
+    transform: scale(1.0);
+    transition: 0.5s;
+}
+.p1{
+    border: 7px solid darkgoldenrod;
+    border-radius: 5px 5px 5px 50px;
+}
+.p2{
+    border: 7px solid darkgoldenrod;
+    border-radius: 5px 5px 5px 50px;
+}
+.p1:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.p2:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.p1:not(hover){
+    transform: scale(1.0);
+    transition: 0.5s;
+}
+.p2:not(hover){
+    transform: scale(1.0);
+    transition: 0.5s;
+}
+.two{
+    display: flex;
+    max-width: 750px;
+    justify-content: center;
+    margin: auto;
+    gap: 40px;
+}
+li{
+    list-style: none;
+    background-color: darkslategrey;
+    padding: 20px;
+    border: 2px solid darkgoldenrod;
+}
+li:hover{
+    padding: 20px 80px 20px 20px;
+    transform: translateX(20px);
+    transition: 100ms;
+}
+li:not(hover){
+    padding: 20px 20px 20px 20px;
+    transition: 100ms;
+}
