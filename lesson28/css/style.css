@@ -17,9 +17,11 @@
 [first-atribute="four"]{
     text-align: left;
     word-spacing: 30px; 
+    text-decoration: overline wavy;
 }
 
 .five{
     letter-spacing: 5px;
-    border-bottom: 2px double rgb(43, 41, 41);
+    /*border-bottom: 2px double rgb(43, 41, 41);*/
+    text-decoration: underline double;
 }
