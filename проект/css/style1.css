@@ -1,0 +1,75 @@
+body {
+    background-color: rgb(151, 210, 253);
+    font-family: "Poppins", sans-serif;
+}
+
+.svg-to-page1 {
+    position: absolute;
+    top: 0px;
+}
+
+img {
+    width: 75px;
+}
+
+.a-to-page1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-to-page1{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.img-to-page1-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.a-to-page1-1{
+    font-size: 11px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+.text-to-page1{
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    text-align: left;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    width: 300px;
+    /*margin: 20px auto;*/
+    margin-top: 30px;
+    line-height: 20px;
+}
+.img-to-page1-1{
+    width: 325px;
+    border-radius: 50px 50px 50px 0px;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.349);
+}
+.img-to-page1-1:hover{
+    transform: translateX(20px);
+    transition: .5s;
+    cursor: pointer;
+}
+.img-to-page1-1:not(hover){
+    transform: translateX(-20px);
+    transition: .5s;
+}
+.content1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}

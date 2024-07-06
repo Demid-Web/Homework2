@@ -1,0 +1,119 @@
+@keyframes anim1 {
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+
+body {
+    background-color: rgb(151, 210, 253);
+    font-family: "Poppins", sans-serif;
+}
+
+.svg1 {
+    position: absolute;
+    top: 0;
+
+}
+
+.logo {
+    display: block;
+    position: relative;
+    top: 50px;
+
+
+}
+
+.img {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 17px auto;
+    animation: 5s anim1 infinite;
+}
+
+.text1 {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text2 {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    border: 3px solid rgb(61, 147, 168);
+    border-radius: 20px;
+    background: rgb(181, 223, 253);
+    width: 225px;
+    padding: 10px;
+    opacity: 0.8;
+}
+
+.form-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.form1 {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    border: 3px solid rgb(61, 147, 168);
+    border-radius: 20px;
+    background: rgb(174, 219, 252);
+    width: 225px;
+    padding: 10px;
+    opacity: 0.8;
+}
+
+.form-cont1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.form2 {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 16px;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(33, 59, 125);
+    width: 100px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-cont2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
