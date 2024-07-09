@@ -1,0 +1,24 @@
+body{
+    background-color: black;
+    color: aliceblue;
+    font-size: 50px;
+    padding-bottom: 2000px;
+}
+.body__block{
+    background-color: darkgrey;
+    height: 100px;
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+    right: 50px;
+    border-radius: 5px;
+}
+.body__block1{
+    background-color: crimson;
+    height: 100px;
+    width: 100px;
+    border-radius: 1000px;
+    position: relative;
+    bottom: 50px;
+    left: 100px;
+}
