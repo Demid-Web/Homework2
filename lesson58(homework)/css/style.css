@@ -1,0 +1,90 @@
+body{
+    background-color: darkgray;
+}
+.block{
+    background-color: rgb(85, 95, 114);
+    width: 250px;
+    height: 250px;
+    color: rgb(85, 95, 114);
+    position: relative;
+    top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.block__loadingbar{
+    background-color: aliceblue;
+    width: 0px;
+    height: 40px;
+    position: absolute;
+    bottom: 400px;
+    left: -138px;
+}
+.block__loadingbar1{
+    background-color: violet;
+    width: 0px;
+    height: 40px;
+    position: absolute;
+    bottom: 442px;
+    left: -138px;
+}
+.block__loadingbar2{
+    background-color: rgb(98, 72, 170);
+    width: 0px;
+    height: 40px;
+    position: absolute;
+    bottom: 485px;
+    left: -138px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block:hover .block__loadingbar{
+    width: 550px;
+    transition: 1s ease-out;
+}
+.block:hover .block__loadingbar1{
+    width: 550px;
+    transition: 1s ease-in;
+}
+.block:hover .block__loadingbar2{
+    width: 550px;
+    transition: 1s ease-in-out;
+}
+.block:hover .block__title{
+    color: cornflowerblue;
+    transition: 1s .5s;
+}
+.block:not(hover) .block__loadingbar{
+    width: 0px;
+    transition: 1s ease-in-out;
+}
+.block:not(hover) .block__loadingbar1{
+    width: 0px;
+    transition: 1s ease-out;
+}
+.block:not(hover) .block__loadingbar2{
+    width: 0px;
+    transition: 1s ease-in;
+}
+.block:not(hover) .block__title{
+    color: rgb(85, 95, 114);
+    transition: 1s .5s;
+}
+.block:hover{
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+    border-bottom-right-radius: 120px;
+    border-bottom-left-radius: 120px;
+    transition: border-top-left-radius 300ms, border-top-right-radius 300ms .1s, border-bottom-right-radius 300ms .2s, border-bottom-left-radius 300ms .3s;
+}
+.block:not(hover){
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition: border-top-left-radius 300ms, border-top-right-radius 300ms .1s, border-bottom-right-radius 300ms .2s, border-bottom-left-radius 300ms .3s;
+}
