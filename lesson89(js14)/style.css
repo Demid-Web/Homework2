@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.background{
+    width: 10%;
+    height: 40px;
+    background-color: rgb(126, 121, 121);
+    border: 5px solid rgb(83, 80, 80);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    transition: 2s;
+}
+.background__handly{
+    width: 21%;
+    height: 80%;
+    background-color: rgb(70, 65, 65);
+    /*border: 3px solid rgb(48, 47, 47);*/
+    border-radius: 100%;
+    margin: 0 5px;
+    transition: 1s;
+}
+.background__handly--on{
+    transform: translateX(350%);
+}

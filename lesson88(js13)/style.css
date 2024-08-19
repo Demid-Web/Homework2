@@ -1,0 +1,25 @@
+.firstBlock{
+    /*width: 250px;
+    height: 250px;*/
+    background-color: rgb(221, 114, 137);
+    padding: 150px;
+    border-radius: 35px;
+    box-shadow: 10px 10px 15px rgb(73, 54, 63);
+    transition: 2s;
+    /*border-top: 1px solid white;
+    border-right: 1px solid white;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 30px;
+}
+.firstBlock:hover{
+    transform: scale(1.05);
+    box-shadow: 50px 50px 19px rgb(122, 85, 104);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
