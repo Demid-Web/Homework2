@@ -1,0 +1,11 @@
+.btn{
+    background-color: brown;
+    color: aliceblue;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 30px;
+}
+.btns{
+    display: flex;
+    gap: 10px;
+}

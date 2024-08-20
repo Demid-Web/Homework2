@@ -1,0 +1,14 @@
+.btn{
+    color: azure;
+    background-color: rgb(17, 129, 129);
+    border: 2px solid azure;
+    margin: 15px;
+    font-size: 30px;
+    text-align: center;
+}
+body{
+    background-color: rgb(37, 35, 35);
+}
+.red{
+    background-color: rgb(240, 62, 30);
+}
