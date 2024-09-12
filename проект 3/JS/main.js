@@ -32,3 +32,26 @@ cansel.addEventListener('click', () => {
     body.classList.remove('body-dont-scrolling')
 })
 
+/*============================================*/
+
+const tabControls = document.querySelector('.programm__tabs')
+tabControls.addEventListener('click', switchTab)
+function switchTab(event){
+    const tabControl = event.target.closest('.tab__btn')
+    if(!tabControl) return
+    event.preventDefault()
+    if(tabControl.classList.contains('tab__control--focus')) return
+    const tabID = tabControl.getAttribute('href')
+    const tabContent = document.querySelector(tabID)
+    const tabLink = document.querySelector('.tab__control--focus')
+    const tabShowContent = document.querySelector('.tab__info--show')
+    if(tabLink){
+        tabLink.classList.remove('tab__control--focus')
+    }
+    if(tabShowContent){
+        tabShowContent.classList.remove('tab__info--show')
+    }
+    tabControl.classList.add('tab__control--focus')
+    tabContent.classList.add('tab__info--show')
+    
+}
