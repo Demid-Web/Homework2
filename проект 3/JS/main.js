@@ -88,6 +88,11 @@ function accordianContentShow(event){
     if(!accordianControl) return
     accordianControl.classList.toggle('accordian__control--focus')
     accordianContent.classList.toggle('accordian__content--show')
+    if(accordianContent.classList.contains('accordian__content--show')){
+        accordianContent.style.maxHeight = accordianContent.scrollHeight + 'px'
+    } else{
+        accordianContent.style.maxHeight = null
+    }
 }
 
 
