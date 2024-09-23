@@ -78,37 +78,33 @@ function accordianContentShow(event){
 }*/
 
 const accordian = document.querySelectorAll('.accordian')
-for(i = 0; i < accordian.length; i++){
+for (i = 0; i < accordian.length; i++) {
     accordian[i].addEventListener('click', accordianContentShow)
 }
-function accordianContentShow(event){
+function accordianContentShow(event) {
     const accordianControl = event.target.closest('.accordian__list-item')
     const accordianContent = accordianControl.children[1]
     console.log(accordianContent)
-    if(!accordianControl) return
+    if (!accordianControl) return
     accordianControl.classList.toggle('accordian__control--focus')
     accordianContent.classList.toggle('accordian__content--show')
-    if(accordianContent.classList.contains('accordian__content--show')){
+    if (accordianContent.classList.contains('accordian__content--show')) {
         accordianContent.style.maxHeight = accordianContent.scrollHeight + 'px'
-    } else{
+    } else {
         accordianContent.style.maxHeight = null
     }
 }
 
+const swiper = new Swiper('.swiper', {
 
+    pagination: {
+        el: '.swiper-pagination',
+    },
 
-
-/*const accordian = document.querySelector('.accordian')
-    accordian.addEventListener('click', accordianContentShow)
-function accordianContentShow(event){
-    const accordianControl = event.target.closest('.accordian__list-item')
-    const accordianContent = accordianControl.children[1]
-    console.log(accordianContent)
-    if(!accordianControl) return
-    accordianControl.classList.toggle('accordian__control--focus')
-    accordianContent.classList.toggle('accordian__content--show')
-}*/
-
-
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    }
+});
 
 
