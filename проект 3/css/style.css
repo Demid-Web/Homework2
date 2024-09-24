@@ -812,7 +812,9 @@ rect {
 .galery__inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
+    column-gap: 32px;
+    margin-top: 140px;
+    row-gap: 40px;
 }
 
 .galery__img {
@@ -823,6 +825,7 @@ rect {
 .galery__info {
     display: flex;
     align-items: end;
+    gap: 74px;
 }
 
 .galery__title {
@@ -838,12 +841,62 @@ rect {
     max-width: 380px;
 }
 
-.swiper {
-    width: 600px;
-    height: 300px;
+.swiper{
+    width: 100%;
 }
-
-
+.galery__nav{
+    display: flex;
+    font-family: Gabriola;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 90%;
+    letter-spacing: 0%;
+    text-align: center;
+    gap: 18px;
+}
+.galery-pagination{
+    display: flex;
+}
+.galery-prev,
+.galery-next{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1.5px solid rgb(255, 165, 92);
+    border-radius: 100px;
+    flex-shrink: 0;
+    background: transparent;
+    transition: all .4s;
+}
+.galery-prev:hover path,
+.galery-next:hover path{
+    fill: rgb(255, 249, 244);
+}
+.galery-prev path,
+.galery-next path{
+    transition: all .4s;
+}
+.galery-prev:hover,
+.galery-next:hover{
+    background-color: rgb(255, 165, 92);
+    border: 1.5px solid rgb(255, 165, 92);
+}
+.galery-prev{
+    border: 1.5px solid rgb(225, 217, 225);
+    transform: rotateZ(-180deg);
+}
+.galery-prev path{
+    fill: rgb(225, 217, 225);
+}
+.swiper{
+    width: 100%;
+    grid-column: 1/-1;
+}
+.swiper-slide img{
+    border-radius: 20px;
+}
 /*==============================================*/
 
 @media (max-width : 1000px) {

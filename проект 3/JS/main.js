@@ -97,13 +97,16 @@ function accordianContentShow(event) {
 
 const swiper = new Swiper('.swiper', {
 
+    slidesPerView: 4,
+
     pagination: {
-        el: '.swiper-pagination',
+        el: '.galery-pagination',
+        type: "fraction",
     },
 
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.galery-next',
+        prevEl: '.galery-prev',
     }
 });
 
