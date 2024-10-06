@@ -1,3 +1,5 @@
+/*const Inputmask = require("./inputmasc.min")*/
+
 const burgerMenu = document.querySelector('.burger-menu')
 const body = document.querySelector('.body')
 const headerLink = document.querySelectorAll('.nav__item')
@@ -97,7 +99,8 @@ function accordianContentShow(event) {
 
 const swiper = new Swiper('.swiper', {
 
-    slidesPerView: 4,
+    slidesPerView: 2,
+    spaceBetween: 15,
 
     pagination: {
         el: '.galery-pagination',
@@ -107,7 +110,56 @@ const swiper = new Swiper('.swiper', {
     navigation: {
         nextEl: '.galery-next',
         prevEl: '.galery-prev',
+    },
+    breakpoints: {
+
+
+        640: {
+            slidesPerView: 2.5,
+            spaceBetween: 20
+        },
+        1101: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+        1201: {
+            slidesPerView: 4,
+            spaceBetween: 32
+        }
     }
 });
+const testimonialsSwiper = new Swiper('.testimonials__swiper', {
+
+    slidesPerView: 1,
+    spaceBetween: 10,
+    centeredSlides: true,
+
+    scrollbar: {
+        el: ".testimonials-swiper-scrollbar",
+    },
+    navigation: {
+        nextEl: '.testimonials-next',
+        prevEl: '.testimonials-prev',
+    },
+    breakpoints: {
+
+        1201: {
+            slidesPerView: 2,
+            spaceBetween: 34
+        },
+        900: {
+            slidesPerView: 1.5,
+            spaceBetween: 20
+        },
+        700: {
+            slidesPerView: 1.2,
+            spaceBetween: 15
+        }
+    }
+});
+/*===============================*/
+const telInputs = document.querySelectorAll('input[type=tel]')
+const im = new Inputmask('+7 (999) 999 99-99')
+im.mask(telInputs)
 
 
