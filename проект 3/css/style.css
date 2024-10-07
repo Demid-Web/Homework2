@@ -46,6 +46,7 @@ body {
     height: 62px;
     border-radius: 60px;
     transition: all .4s;
+    font-weight: 500;
 }
 
 .button:hover {
@@ -226,7 +227,10 @@ body {
     bottom: 50px;
     left: calc(100% - 39px);
 }
-
+.hero__img-control img{
+    position: absolute;
+    left: 41%;
+}
 .hero__content .hero__img-control {
     display: none;
 }
@@ -396,7 +400,7 @@ body {
     color: rgb(255, 249, 244);
 }
 
-.about__img-control div {
+.about__img-control button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -408,7 +412,7 @@ body {
     position: relative;
 }
 
-.about__img-control div::after {
+.about__img-control button::after {
     content: '';
     position: absolute;
     inset: 5px;
@@ -418,7 +422,7 @@ body {
     opacity: 0;
 }
 
-.about__img-control div:hover::after {
+.about__img-control button:hover::after {
     opacity: 1;
 }
 
@@ -510,6 +514,7 @@ body {
     position: absolute;
     top: 20px;
     right: 20px;
+    background: transparent;
 }
 
 .cansel path,
@@ -639,11 +644,11 @@ rect {
     border: 1px solid rgb(255, 165, 92);
     border-radius: 20px;
     margin-bottom: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
 }
 
 .accordian__control {
-    padding: 40px 30px 0px;
+    padding: 40px 30px 30px;
     background: transparent;
     display: flex;
     justify-content: space-between;
@@ -694,6 +699,7 @@ rect {
 
 .accordian__content {
     padding: 10px 20px 0px 30px;
+    /*margin-bottom: 30px;*/
     display: flex;
     gap: 80px;
     max-height: 0px;
@@ -731,9 +737,12 @@ rect {
     display: flex;
     gap: 8px;
     /*align-items: center;*/
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
+    padding-bottom: 30px;
 }
-
+.accordian__content__col-text{
+    padding-bottom: 30px;
+}
 /*=============================================*/
 
 .programm__bottom {
@@ -1541,6 +1550,18 @@ rect {
     .testimonials__swiper-slide__img:nth-child(0) {
         width: 20%;
     }
+    .contacts__inner{
+        text-align: center;
+        justify-content: center;
+    }
+    .contacts__main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacts__check{
+        max-width: 350px;
+    }
 }
 
 @media (max-width : 450px) {
@@ -1693,9 +1714,9 @@ rect {
     .contacts__info{
         font-size: 3.5vw;
     }
-    .contacts__input{
+    /*.contacts__input{
         width: 80%;
-    }
+    }*/
     .contacts__check span{
         font-size: 3.5vw;
     }

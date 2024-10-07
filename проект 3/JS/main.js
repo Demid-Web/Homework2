@@ -99,7 +99,7 @@ function accordianContentShow(event) {
 
 const swiper = new Swiper('.swiper', {
 
-    slidesPerView: 2,
+    slidesPerView: 1.5,
     spaceBetween: 15,
 
     pagination: {
