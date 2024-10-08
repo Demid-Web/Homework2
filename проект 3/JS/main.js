@@ -25,6 +25,14 @@ for (i = 0; i < headerLink.length; i++) {
         }
     })
 }
+const modalBack = document.querySelector('.modal-window')
+modalBack.addEventListener('click', (event) => {
+    const targetModal = event.target
+    if (targetModal.closest('cansel') || targetModal.classList.contains('modal-window')) {
+        modal.classList.remove('modal-window--open')
+        body.classList.remove('body-dont-scrolling')
+    }
+})
 modalButton.addEventListener('click', () => {
     modal.classList.add('modal-window--open')
     body.classList.toggle('body-dont-scrolling')

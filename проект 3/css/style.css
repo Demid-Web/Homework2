@@ -489,6 +489,7 @@ body {
     background: rgb(255, 249, 244);
     padding: 133px 60px 60px 60px;
     position: relative;
+    /*z-index: 10;*/
 }
 
 .modal__title {
@@ -883,7 +884,9 @@ rect {
     background: transparent;
     transition: all .4s;
 }
-
+.galery-prev{
+    transform: rotateZ(-180deg);
+}
 .galery-prev:hover path,
 .galery-next:hover path {
     fill: rgb(255, 249, 244);
@@ -899,15 +902,27 @@ rect {
     background-color: rgb(255, 165, 92);
     border: 1.5px solid rgb(255, 165, 92);
 }
-
-.galery-prev {
+.swiper-button-disabled{
+    border: 1.5px solid rgb(225, 217, 225);
+}
+.swiper-button-disabled path{
+    fill: rgb(225, 217, 225);
+}
+.swiper-button-disabled:hover{
+    border: 1.5px solid rgb(225, 217, 225);
+    background: transparent;
+}
+.swiper-button-disabled:hover path{
+    fill: rgb(225, 217, 225);
+}
+/*.galery-prev {
     border: 1.5px solid rgb(225, 217, 225);
     transform: rotateZ(-180deg);
 }
 
 .galery-prev path {
     fill: rgb(225, 217, 225);
-}
+}*/
 
 .swiper {
     width: 100%;
