@@ -11,6 +11,9 @@ body {
     background-color: rgb(29, 27, 27);
     color: rgb(255, 255, 255);
 }
+.body--dont-scrolling{
+    overflow: hidden;
+}
 
 .wrapper {
     min-height: 100%;
@@ -46,6 +49,7 @@ body {
 
 .header__logo {
     max-width: 100%;
+    z-index: 1;
 }
 
 .header__nav__list {
@@ -158,25 +162,28 @@ body {
     /*object-position: 50% 50%;*/
 }
 
-.swiper-slide-3{
+.swiper-slide-3 {
     width: 100%;
     background-image: url(../assets/info/bg-image-4.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.swiper-slide-1{
+
+.swiper-slide-1 {
     width: 100%;
     background-image: url(../assets/info/bg-image-1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.swiper-slide-2{
+
+.swiper-slide-2 {
     width: 100%;
     background-image: url(../assets/info/bg-image-2.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.swiper-slide-4{
+
+.swiper-slide-4 {
     width: 100%;
     background-image: url(../assets/info/bg-image-3.jpeg);
     background-repeat: no-repeat;
@@ -214,6 +221,9 @@ body {
     transition: all .4s;
 
 }
+.header__markets{
+    z-index: 1;
+}
 
 .header__markets h4:hover {
     color: rgb(255, 181, 72);
@@ -240,15 +250,167 @@ body {
     text-align: justify;
     text-transform: uppercase;
     transition: all .4s;
-    
+
 }
-.header__arrow:hover path{
+
+.header__arrow:hover path {
     stroke: rgb(255, 181, 72);
 }
-.header__arrow:hover p{
+
+.header__arrow:hover p {
     color: rgb(255, 181, 72);
 }
-.header__arrow path{
+
+.header__arrow path {
     transition: all .4s;
 }
 
+.burger__control {
+    display: none;
+    width: 23.49px;
+    height: 2.5px;
+    border-radius: 3px;
+    background: rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+}
+.burger__control--active.burger__control::before {
+    width: 23.49px;
+}
+
+.burger__control::after {
+    content: '';
+    position: absolute;
+    display: none;
+    width: 23.49px;
+    height: 2.5px;
+    border-radius: 3px;
+    background: rgb(255, 255, 255);
+    top: -7px;
+}
+
+.burger__control::before {
+    content: '';
+    position: absolute;
+    display: none;
+    width: 14.49px;
+    height: 2.5px;
+    border-radius: 3px;
+    background: rgb(255, 255, 255);
+    bottom: -7px;
+    transition: all .4s;
+}
+
+/*.burger__menu::before {
+    width: 23.49px;
+}*/
+.burger__menu {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(39, 36, 36, 0.603);
+}
+.burger__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header__nav__list--burger{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+.header__item--burger{
+    font-size: 28px;
+}
+.header__markets__icons--burger a:hover path {
+    fill: rgb(255, 255, 255);
+}
+
+.header__markets__icons--burger path {
+    transition: all .4s;
+}
+.header__markets__icons--burger {
+    display: flex;
+    gap: 17px;
+}
+.burger__menu{
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all .4s;
+}
+.burger__menu--active{
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+/*==========================================*/
+@media (max-width : 1000px) {
+    .header__navigation {
+        margin-bottom: 170px;
+    }
+
+    .header__info {
+        margin-bottom: 170px;
+    }
+}
+
+@media (max-width : 800px) {
+    .header__navigation {
+        margin-bottom: 140px;
+    }
+
+    .header__info {
+        margin-bottom: 140px;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__markets__icons {
+        display: none;
+    }
+
+    
+
+    .burger__control {
+        display: flex;
+        justify-content: end;
+    }
+
+    .burger__control::after {
+        display: block;
+    }
+
+    .burger__control::before {
+        display: block;
+    }
+
+}
+@media (max-width : 650px) {
+    .header__title{
+        font-size: 11vw;
+    }
+    .header__text{
+        font-size: 3.5vw;
+    }
+    .header__button{
+        padding: 13px;
+        font-size: 3vw;
+    }
+    .header__button p{
+        font-size: 3vw;
+    }
+    .swiper-slide-1 {
+        background-position: 45% 50%;
+    }
+    .swiper-slide-3 {
+        background-position: 50%;
+    }
+    .swiper-slide-4 {
+        background-position: 80%;
+    }
+}
