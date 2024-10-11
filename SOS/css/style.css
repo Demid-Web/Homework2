@@ -264,7 +264,9 @@ body {
 .header__arrow path {
     transition: all .4s;
 }
-
+.burger__cell{
+    background: transparent;
+}
 .burger__control {
     display: none;
     width: 23.49px;
@@ -273,6 +275,7 @@ body {
     background: rgb(255, 255, 255);
     position: relative;
     z-index: 1;
+    margin: 15px;
 }
 .burger__control--active.burger__control::before {
     width: 23.49px;
