@@ -450,6 +450,7 @@ body {
     display: flex;
     gap: 80px;
     justify-content: center;
+    /*flex-direction: column;*/
 }
 
 .about__swiper-cont {
@@ -537,7 +538,8 @@ body {
     right: -80px;
     transition: all .4s;
 }
-.swiper-button-disabled{
+
+.swiper-button-disabled {
     opacity: 0;
 }
 
@@ -584,6 +586,14 @@ body {
         display: block;
     }
 
+    .about__swiper-cont .about-swiper {
+        max-width: 400px;
+        height: 500px;
+    }
+
+    .about__swiper-cont .about-swiper .swiper-pagination-about {
+        left: 30%;
+    }
 }
 
 @media (max-width : 650px) {
@@ -614,5 +624,82 @@ body {
 
     .swiper-slide-4 {
         background-position: 80%;
+    }
+
+    .about__swiper-cont .about-swiper {
+        max-width: 300px;
+        height: 400px;
+
+    }
+
+    .about__title {
+        font-size: 12vw;
+        line-height: 10vw;
+    }
+
+    .about__info>span {
+        font-size: 4vw;
+    }
+
+    .about__text {
+        font-size: 3.5vw;
+    }
+
+    .about__swiper-cont .about-swiper .swiper-pagination-about {
+        left: 22%;
+    }
+
+    .about__swiper-cont .about-swiper .swiper-pagination-about .swiper-pagination-bullet {
+        border: 1.5px solid rgb(255, 255, 255);
+        width: 13px;
+        height: 13px;
+    }
+
+    .swiper-button-prev-about {
+        left: -50px;
+    }
+
+    .swiper-button-next-about {
+        right: -50px;
+    }
+}
+
+@media (max-width : 1250px) {
+    .about__text {
+        margin-left: 125px;
+    }
+}
+
+@media (max-width : 1200px) {
+    .about__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__swiper-cont .about-swiper {
+        margin-top: 30px;
+    }
+
+    .about__swiper-cont {
+        width: auto;
+    }
+
+}
+@media (max-width : 400px){
+    .about__swiper-cont .about-swiper {
+        max-width: 250px;
+        height: 350px;
+
+    }
+    .swiper-button-prev-about {
+        left: -40px;
+    }
+
+    .swiper-button-next-about {
+        right: -40px;
+    }
+    .about__text{
+        margin-left: 50px;
+        flex-shrink: 0;
     }
 }
