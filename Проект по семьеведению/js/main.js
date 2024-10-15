@@ -39,3 +39,12 @@ function accordianContentShow(event) {
         accordianContent.style.maxHeight = null
     }
 }
+
+const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+    },
+});

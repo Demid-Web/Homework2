@@ -400,3 +400,70 @@ nav{
     align-items: center;
     margin-bottom: 20px;
 }
+/*========================================*/
+.mySwiper .swiper-slide-1{
+    background-image: url(../assets/IMG_20241015_193355_057.jpg);
+    height: 450px;
+    background-size: cover;
+    background-position: 50% 80%;
+    border-radius: 40px;
+}
+.mySwiper .swiper-slide-2{
+    background-image: url(../assets/IMG_20241015_193355_304.jpg);
+    height: 450px;
+    background-size: cover;
+    background-position: 50% 80%;
+    border-radius: 40px;
+}
+.mySwiper .swiper-slide-3{
+    background-image: url(../assets/IMG_20241015_193355_700.jpg);
+    height: 450px;
+    background-size: cover;
+    background-position: 50% 60%;
+    border-radius: 40px;
+}
+.mySwiper .swiper-slide-4{
+    background-image: url(../assets/IMG_20241015_193355_808.jpg);
+    height: 450px;
+    background-size: cover;
+    background-position: 50% 80%;
+    border-radius: 40px;
+}
+.mySwiper .swiper-slide-5{
+    background-image: url(../assets/IMG_20241015_193355_957.jpg);
+    height: 450px;
+    background-size: cover;
+    background-position: 50% 80%;
+    border-radius: 40px;
+}
+.mySwiper{
+    margin-bottom: 50px;
+}
+/*============================================*/
+.main-info-2__title{
+    font-family: 'Playfair Display';
+    font-size: 50px;
+    color: rgb(62, 65, 66);
+    transition: all .5s;
+    margin-bottom: 20px;
+}
+.main-info-2__text, .main-info-2__text-1{
+    max-width: 750px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 25px;
+    color: rgb(62, 65, 66);
+}
+.main-info-2__text span, .main-info-2__text-1 span{
+    font-family: 'Open Sans';
+    font-size: 20px;
+    line-height: 35px;
+    color: rgb(46, 47, 48);
+    text-transform: uppercase;
+}
+.main-info-2__text-1{
+    margin-top: 10px;
+}
+.main-info-2{
+    margin-bottom: 100px;
+}
