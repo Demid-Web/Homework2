@@ -543,6 +543,196 @@ body {
     opacity: 0;
 }
 
+/*===========================================*/
+
+.content {
+    background-image: url('../assets/info/bg-image-4.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-top: 160px;
+    padding-bottom: 250px;
+}
+
+.content__text {
+    font-family: Bebas Neue;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-align: start;
+}
+
+.content__title {
+    font-family: Bebas Neue;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 3px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+
+.accordion__button {
+    color: rgb(255, 181, 72);
+    font-family: Bebas Neue;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    margin-bottom: -21px;
+}
+
+.accordion__button__link {
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.accordion__content {
+    font-family: 'Open Sans Condensed';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: justify;
+    max-width: 280px;
+    position: relative;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all .4s;
+}
+
+.accordion__content__text {
+    margin-left: 36px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.accordion__content__text::before {
+    content: '';
+    position: absolute;
+    width: 140px;
+    height: 0px;
+    left: -22.5%;
+    top: 65%;
+    transform: rotate(90.00deg);
+    border: 1.96px solid rgb(255, 255, 255);
+    z-index: 2;
+    transition: all .3s;
+    opacity: 0;
+}
+
+.accordion__cell--focus .accordion__content__text::before {
+    opacity: 1;
+}
+
+.accordion__cell--focus .accordion__button__point {
+    background: rgb(255, 255, 255);
+}
+
+.accordion__button__point {
+    width: 14px;
+    height: 14px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+    left: -34px;
+    flex-shrink: 0;
+    margin-bottom: 8px;
+    transition: all .6s;
+}
+
+.accordion__cell {
+    margin-bottom: 27px;
+}
+
+.accordion__button {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/*==========================================*/
+
+.requirements {
+    background-image: url('../assets/info/bg-image-3.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 145px 0 170px;
+}
+
+.requirements__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 3px dashed rgb(151, 151, 151);
+    max-width: 573px;
+}
+
+.requirements__text-main p {
+    font-family: Bebas Neue;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.requirements__text-main h2 {
+    font-family: Bebas Neue;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.requirements__text-main {
+    text-align: center;
+    margin-bottom: 133px;
+}
+
+.requirements__cell-big{
+    grid-column: 1/-1;
+}
+.requirements__cell-big .requirements__text{
+    max-width: 514.31px;
+}
+
+.requirements__title {
+    color: rgb(255, 181, 72);
+    font-family: Bebas Neue;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 7px;
+}
+
+.requirements__text {
+    font-family: 'Open Sans Condensed';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    max-width: 257.65px;
+}
+.requirements__cell{
+    padding: 14px 19px 30px;
+    display: flex;
+    flex-direction: column;
+    border: 0.1px solid rgb(151, 151, 151);
+}
+
 /*==========================================*/
 @media (max-width : 1000px) {
     .header__navigation {
@@ -685,12 +875,14 @@ body {
     }
 
 }
-@media (max-width : 400px){
+
+@media (max-width : 400px) {
     .about__swiper-cont .about-swiper {
         max-width: 250px;
         height: 350px;
 
     }
+
     .swiper-button-prev-about {
         left: -40px;
     }
@@ -698,7 +890,8 @@ body {
     .swiper-button-next-about {
         right: -40px;
     }
-    .about__text{
+
+    .about__text {
         margin-left: 50px;
         flex-shrink: 0;
     }
