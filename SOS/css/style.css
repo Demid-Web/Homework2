@@ -1,5 +1,5 @@
 html {
-    scroll-snap-type: y;
+    
 }
 
 body {
@@ -20,16 +20,28 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    height: 100vh
 }
 
 .main {
     flex-grow: 1;
+    /*overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    min-height:  100vh;*/
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 
 }
-
+.footer{
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
 .header {
     position: relative;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 .container {
@@ -1196,6 +1208,19 @@ section {
     .subscribe__title {
         text-align: center;
     }
+    .footer__navigation{
+        flex-direction: column;
+    }
+    .footer__nav__list{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer__nav{
+        margin-bottom: 42px;
+        margin-top: 35px;
+    }
+    
+    
 }
 
 @media (max-width : 650px) {
@@ -1332,6 +1357,15 @@ section {
         font-size: 3vw;
         line-height: 3vw;
         margin-bottom: 10vw;
+    }
+    .footer__copyrite{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer__copyrite__last{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
