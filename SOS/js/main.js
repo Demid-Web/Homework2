@@ -18,10 +18,12 @@ const swiper = new Swiper('.header__swiper', {
 const burgerCell = document.querySelector('.burger__cell')
 const burgerControll = document.querySelector('.burger__control')
 const burger = document.querySelector('.burger__menu')
+const wrapper = document.querySelector('.wrapper')
 const body = document.querySelector('.body')
 burgerCell.addEventListener('click', () => {
     burger.classList.toggle('burger__menu--active')
     body.classList.toggle('body--dont-scrolling')
+    wrapper.classList.toggle('body--dont-scrolling')
     burgerControll.classList.toggle('burger__control--active')
 })
 const swiperAbout = new Swiper(".about-swiper", {
