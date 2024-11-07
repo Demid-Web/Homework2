@@ -547,7 +547,7 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     transform: rotateZ(90deg);
-    left: -80px;
+    left: -70px;
     transition: all .4s;
     cursor: pointer;
 }
@@ -561,7 +561,7 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     transform: rotateZ(-90deg);
-    right: -80px;
+    right: -70px;
     transition: all .4s;
     cursor: pointer;
 }
@@ -1138,6 +1138,12 @@ section {
 }
 
 @media (max-width : 800px) {
+    /*.swiper-button-next-about{
+        left: -60px;
+    }
+    .swiper-button-prev-about{
+        right: -60px;
+    }*/
     .header__navigation {
         margin-bottom: 140px;
     }
@@ -1386,7 +1392,7 @@ section {
     }
 
     .about__swiper-cont {
-        width: auto;
+        margin-left: 14vw;
     }
 
     .testimonial--centered {
